@@ -48,18 +48,7 @@
 									"type": "Int32"
 								},
 								"sink": {
-									"name": "AddressID",
-									"type": "String"
-								}
-							},
-							{
-								"source": {
-									"name": "AddressLine1",
-									"type": "String"
-								},
-								"sink": {
-									"name": "AddressLine1",
-									"type": "String"
+									"path": "$"
 								}
 							},
 							{
@@ -68,28 +57,7 @@
 									"type": "String"
 								},
 								"sink": {
-									"name": "City",
-									"type": "String"
-								}
-							},
-							{
-								"source": {
-									"name": "StateProvince",
-									"type": "String"
-								},
-								"sink": {
-									"name": "StateProvince",
-									"type": "String"
-								}
-							},
-							{
-								"source": {
-									"name": "CountryRegion",
-									"type": "String"
-								},
-								"sink": {
-									"name": "CountryRegion",
-									"type": "String"
+									"path": "city"
 								}
 							},
 							{
@@ -98,8 +66,7 @@
 									"type": "String"
 								},
 								"sink": {
-									"name": "PostalCode",
-									"type": "String"
+									"path": "postalCode"
 								}
 							}
 						]
