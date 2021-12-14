@@ -4,15 +4,7 @@
 		"annotations": [],
 		"type": "SqlServer",
 		"typeProperties": {
-			"connectionString": {
-				"type": "AzureKeyVaultSecret",
-				"store": {
-					"referenceName": "AzureKeyVault1",
-					"type": "LinkedServiceReference"
-				},
-				"secretName": "sql-password"
-			},
-			"userName": "[13:58] Misja Pronk  sqldb-misja-edu",
+			"connectionString": "Integrated Security=False;Data Source=sql-misja-edu.database.windows.net;Initial Catalog=sqldb-misja-edu;User ID=misja",
 			"password": {
 				"type": "AzureKeyVaultSecret",
 				"store": {
