@@ -45,7 +45,7 @@
 							"typeProperties": {
 								"variableName": "response",
 								"value": {
-									"value": "concat(@item().showImage.url, @item().id)",
+									"value": "concat(@item().webImage.url, @item().id)",
 									"type": "Expression"
 								}
 							}
