@@ -285,7 +285,9 @@
 				"type": "DelimitedText",
 				"typeProperties": {
 					"location": {
-						"type": "AzureBlobFSLocation"
+						"type": "AzureBlobFSLocation",
+						"folderPath": "stijn",
+						"fileSystem": "demo"
 					},
 					"columnDelimiter": ",",
 					"escapeChar": "\\",
