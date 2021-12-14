@@ -45,7 +45,7 @@
 							"typeProperties": {
 								"variableName": "response",
 								"value": {
-									"value": "concat(@item().webImage.url, @item().id)",
+									"value": "@json(\nconcat('{\"id\": item().id, \"',\n'\"url\":\",item().webImage.url,\"}')\n)",
 									"type": "Expression"
 								}
 							}
