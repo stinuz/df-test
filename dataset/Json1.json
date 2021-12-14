@@ -10,10 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": {
-					"value": "$pipelineRunId",
-					"type": "Expression"
-				},
+				"fileName": "@pipeline().RunId",
 				"folderPath": "stijn",
 				"fileSystem": "demo"
 			}
