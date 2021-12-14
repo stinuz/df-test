@@ -10,6 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
+				"fileName": "a",
 				"folderPath": "stijn",
 				"fileSystem": "demo"
 			},
