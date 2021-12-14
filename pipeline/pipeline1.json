@@ -70,7 +70,7 @@
 							},
 							{
 								"source": {
-									"name": "AddressLine2",
+									"name": "City",
 									"type": "String",
 									"physicalType": "nvarchar"
 								},
@@ -82,7 +82,7 @@
 							},
 							{
 								"source": {
-									"name": "City",
+									"name": "StateProvince",
 									"type": "String",
 									"physicalType": "nvarchar"
 								},
@@ -94,7 +94,7 @@
 							},
 							{
 								"source": {
-									"name": "StateProvince",
+									"name": "CountryRegion",
 									"type": "String",
 									"physicalType": "nvarchar"
 								},
@@ -106,18 +106,6 @@
 							},
 							{
 								"source": {
-									"name": "CountryRegion",
-									"type": "String",
-									"physicalType": "nvarchar"
-								},
-								"sink": {
-									"type": "String",
-									"physicalType": "String",
-									"ordinal": 6
-								}
-							},
-							{
-								"source": {
 									"name": "PostalCode",
 									"type": "String",
 									"physicalType": "nvarchar"
@@ -125,31 +113,7 @@
 								"sink": {
 									"type": "String",
 									"physicalType": "String",
-									"ordinal": 7
-								}
-							},
-							{
-								"source": {
-									"name": "rowguid",
-									"type": "Guid",
-									"physicalType": "uniqueidentifier"
-								},
-								"sink": {
-									"type": "String",
-									"physicalType": "String",
-									"ordinal": 8
-								}
-							},
-							{
-								"source": {
-									"name": "ModifiedDate",
-									"type": "DateTime",
-									"physicalType": "datetime"
-								},
-								"sink": {
-									"type": "String",
-									"physicalType": "String",
-									"ordinal": 9
+									"ordinal": 6
 								}
 							}
 						],
