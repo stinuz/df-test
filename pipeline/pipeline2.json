@@ -22,20 +22,64 @@
 			{
 				"name": "Set variable1",
 				"type": "SetVariable",
-				"dependsOn": [],
+				"dependsOn": [
+					{
+						"activity": "Web1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
 				"userProperties": [],
 				"typeProperties": {
 					"variableName": "response",
 					"value": {
-						"value": "@activity(\"Web1\").output",
+						"value": "@activity('Web1').output",
 						"type": "Expression"
 					}
+				}
+			},
+			{
+				"name": "ForEach1",
+				"type": "ForEach",
+				"dependsOn": [
+					{
+						"activity": "Set variable1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"items": {
+						"value": "@variables('response').artObjects",
+						"type": "Expression"
+					},
+					"activities": [
+						{
+							"name": "Append variable1",
+							"type": "AppendVariable",
+							"dependsOn": [],
+							"userProperties": [],
+							"typeProperties": {
+								"variableName": "response",
+								"value": {
+									"value": "concat(@item().showImage.url, @item().id)",
+									"type": "Expression"
+								}
+							}
+						}
+					]
 				}
 			}
 		],
 		"variables": {
 			"response": {
 				"type": "Array"
+			},
+			"images": {
+				"type": "String"
 			}
 		},
 		"annotations": []
