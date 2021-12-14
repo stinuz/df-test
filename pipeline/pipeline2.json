@@ -33,7 +33,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@variables('response').artObjects",
+						"value": "@activity('Web1').output.artObjects",
 						"type": "Expression"
 					},
 					"activities": [
