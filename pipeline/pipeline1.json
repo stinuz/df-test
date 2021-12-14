@@ -252,7 +252,7 @@
 									"referenceName": "Json1",
 									"type": "DatasetReference"
 								},
-								"enableLogging": true,
+								"enableLogging": false,
 								"storeSettings": {
 									"type": "AzureBlobFSReadSettings",
 									"fileListPath": "demo/stijn/a.json",
