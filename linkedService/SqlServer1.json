@@ -11,6 +11,15 @@
 					"type": "LinkedServiceReference"
 				},
 				"secretName": "sql-password"
+			},
+			"userName": "[13:58] Misja Pronk  sqldb-misja-edu",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzureKeyVault1",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "sql-password"
 			}
 		}
 	}
