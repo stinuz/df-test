@@ -18,6 +18,19 @@
 					"url": "https://www.rijksmuseum.nl/api/en/collection?key=6epvixwD",
 					"method": "GET"
 				}
+			},
+			{
+				"name": "Set variable1",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "response",
+					"value": {
+						"value": "@activity(\"Web1\").output",
+						"type": "Expression"
+					}
+				}
 			}
 		],
 		"variables": {
